@@ -1,0 +1,84 @@
+{
+    "name": "mottaviani-dev/laravel-reductor",
+    "description": "ML-powered test suite optimization for Laravel - Reduce CI/CD time by identifying redundant tests",
+    "keywords": [
+        "laravel",
+        "testing",
+        "phpunit",
+        "pest",
+        "test-optimization",
+        "machine-learning",
+        "ci-cd",
+        "coverage",
+        "test-reduction",
+        "redundancy-detection",
+        "tdd",
+        "continuous-integration"
+    ],
+    "homepage": "https://github.com/mottaviani-dev/laravel-reductor",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matteo Ottaviani",
+            "email": "mottaviani.dev@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mottaviani-dev/laravel-reductor/issues",
+        "source": "https://github.com/mottaviani-dev/laravel-reductor",
+        "docs": "https://github.com/mottaviani-dev/laravel-reductor/blob/main/README.md"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1|^8.2|^8.3",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/console": "^9.0|^10.0|^11.0",
+        "illuminate/database": "^9.0|^10.0|^11.0",
+        "phpunit/php-code-coverage": "^10.1|^11.0",
+        "czproject/git-php": "^4.2",
+        "symfony/process": "^6.0|^7.0",
+        "symfony/yaml": "^6.0|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.0"
+    },
+    "suggest": {
+        "ext-pcov": "For faster code coverage generation (recommended)",
+        "ext-xdebug": "For code coverage generation (slower than PCOV)",
+        "pestphp/pest": "For Pest PHP test framework support"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reductor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "PCOV_ENABLED=1 vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+        "analyse": "vendor/bin/phpstan analyse"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reductor\\ReductorServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

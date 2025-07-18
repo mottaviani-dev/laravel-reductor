@@ -1,0 +1,139 @@
+# Composer
+/vendor/
+
+# PHP
+.phpunit.result.cache
+.phpunit.cache/
+.php_cs.cache
+.php-cs-fixer.cache
+phpunit.xml
+phpunit-coverage.xml
+clover.xml
+coverage.xml
+/coverage-html/
+/coverage-report/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+*.whl
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.coverage
+htmlcov/
+.tox/
+*.egg
+dist/
+build/
+*.whl
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage/
+/build/
+*.log
+phpunit.xml
+phpunit-coverage.xml
+.phpunit.cache/
+clover.xml
+coverage.xml
+/coverage-html/
+/coverage-report/
+
+# CI/CD
+.buildkite/
+.github/workflows/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Storage
+/storage/*.key
+
+# Distribution
+*.tar.gz
+*.zip
+
+# ML/Data Science Outputs
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.weights
+/models/
+/checkpoints/
+/experiments/
+/runs/
+/outputs/
+/results/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp~
+*.orig
+
+# Laravel Reductor specific
+/storage/reductor/*
+!/storage/reductor/.gitignore
+
+# ML/Data outputs
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.model
+*.weights
+/models/
+/checkpoints/
+/experiments/
+/runs/
+/outputs/
+/results/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp~
+*.orig
+
+# Laravel Reductor specific
+/storage/reductor/*
+!/storage/reductor/.gitignore

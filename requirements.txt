@@ -1,0 +1,18 @@
+# Reductor Python Dependencies
+# Install with: pip install -r requirements.txt
+# apk add --no-cache build-base python3-dev py3-pip py3-wheel py3-setuptools py3-numpy cmake
+
+# Core ML dependencies
+numpy>=1.21.0,<2.0.0
+scikit-learn>=1.1.0,<2.0.0
+pandas>=1.5.0,<3.0.0
+scipy>=1.8.0,<2.0.0
+
+# For ML-based analysis (optional, only needed for --driver=ml)
+xgboost>=1.6.0,<2.0.0
+
+# For coverage fingerprint generation
+mmh3>=3.0.0,<4.0.0
+
+# For YAML output
+PyYAML>=5.4.0,<7.0.0
